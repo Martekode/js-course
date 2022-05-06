@@ -10,7 +10,20 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    // your code here
-
+    document.getElementById('red').onclick = function(){
+        document.getElementById('red').style.backgroundColor = "red";
+        document.body.style.backgroundColor = "red";
+    }
+    document.getElementById('blue').onclick = function(){
+        document.getElementById('blue').style.backgroundColor = "blue";
+        document.body.style.backgroundColor = "blue";
+    }
+    document.getElementById('green').onclick = function(){
+        document.getElementById('green').style.backgroundColor = "green";
+        document.body.style.backgroundColor = "green";
+    }
+    document.getElementById('yellow').onclick = function(){
+        document.getElementById('yellow').style.backgroundColor = "yellow";
+        document.body.style.backgroundColor = "yellow";
+    }
 })();

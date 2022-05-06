@@ -10,7 +10,8 @@
 // You will have time to focus on it later.
 
 (function() {
-
+    document.getElementById('run').onclick = function(){
+       
     // your code here
-
+    }
 })();

@@ -10,7 +10,13 @@
 // You will have time to focus on it later.
 
 (function() {
-
+  let cake = prompt('do you want cakyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy?');
+  if (cake === 'yes'){
+    alert('congratulations, me too!');
+  }
+  else{
+    alert('more cake for me nomnom');
+  }
   // your code here
 
 })();
