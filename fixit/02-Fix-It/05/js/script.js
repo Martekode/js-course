@@ -27,7 +27,7 @@ const writeTitle = title => {
 const uCFirst = sentence => {
   console.log(sentence)
   let words = sentence.split(` `);
-  words = words.map(word => word.charAt(0).toUpperCase() + word.slice(1));
+  words = words.map(word => word.charAt().toUpperCase() + word.slice(1));
   console.log(words)
   return words.join(' ');
 };
