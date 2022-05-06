@@ -10,7 +10,17 @@
 // You will have time to focus on it later.
 
 (function() {
-
+    
+    const d = new Date();
+let day = d.getDate();
+    
+   if (day<=18) {
+    document.getElementById("target").innerHTML = "Hello";
+   }
+   else{
+    document.getElementById("target").innerHTML = "good evening";
+   }
+    
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
 
     // your code here
