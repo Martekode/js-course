@@ -6,12 +6,17 @@
  * started at 26/10/2018
  */
 
+//const { format } = require("path");
+
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
 (function() {
-    document.getElementById('run').onclick = function(){
-       
+    document.getElementById('run').onclick = function lala(){
+        
+       let answer =  document.getElementById("color").value;
+       document.body.style.backgroundColor = answer;
     // your code here
     }
+    
 })();
