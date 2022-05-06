@@ -12,5 +12,8 @@
 (function() {
 
     // your code here
-
+    let name = prompt("what's your name");
+    if (name != null){
+        alert('hello '+name);
+    }
 })();
