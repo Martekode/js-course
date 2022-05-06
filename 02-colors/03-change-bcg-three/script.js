@@ -10,7 +10,20 @@
 // You will have time to focus on it later.
 
 (function() {
-
+    document.getElementById('run').onclick = function randomColor(){
+        
+            var letters = '0123456789ABCDEF'.split('');
+            var color = '#';
+            for (var i = 0; i < 6; i++ ) {
+                color += letters[Math.round(Math.random() * 15)];
+            }
+            
+            document.body.style.backgroundColor = color;
+       
+       
+        
+     // your code here
+     }
     // your code here
 
 })();
