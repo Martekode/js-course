@@ -10,7 +10,23 @@
 // You will have time to focus on it later.
 
 (function() {
-
+    document.getElementById('run').onclick = function ageCalc(){
+        let year = document.getElementById('year').value;
+        let d = new Date();
+        let month;
+        var  namemonths = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        for(month = 0;month<=12;month++){
+          d.setFullYear(year, month , 13);
+            if (d.getDay() ==5){
+               let months = namemonths[d.getMonth()];
+                alert('here are the months with a friday the 13th: '+months);
+                console.log(months);
+            } 
+        }
+        
+        
+    }
+      
     // your code here
 
 })();
