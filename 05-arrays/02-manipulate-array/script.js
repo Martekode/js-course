@@ -26,13 +26,16 @@
 
     // your code here
     document.getElementById("run").addEventListener("click", function() {
-        console.log(fruits);
-        fruits[0]="";
-        fruits[fruits.length]="";
-        console.log(fruits);
-        fruits[0]="banana";
-        fruits[fruits.length]="kiwi";
-        console.log(fruits);
+       fruits.forEach(function(item){
+           console.log(item);
+       });
 
+       fruits.shift();
+       fruits.pop();
+       fruits.unshift("banana");
+       fruits.push("kiwi");
+       fruits.forEach(function(item){
+        console.log(item);
+        });
     });
 })();
