@@ -25,11 +25,12 @@
         "grap",
         "cherry",
     ];
-     document.getElementById('run').addEventListener("click", function() {
-        fruits.forEach(function(item){
-            console.log(item);
-        })
-     });
+ document.getElementById('run').addEventListener("click",function(i){
+    for (i=0;i<fruits.length;i++){
+        console.log(fruits[i]);
+    }
+ });   
+  
     // your code here
 
 })();
