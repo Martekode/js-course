@@ -12,7 +12,10 @@
 (function() {
 
     document.getElementById("run").addEventListener("click", function() {
-
+         for (i=1;i<22;i++){
+             //console.log(i);
+            console.log("the square number of " + i + " = " + Math.pow(i,2));
+         }
         // your code here
 
     });
