@@ -27,5 +27,12 @@
     ];
 
     // your code here
+document.getElementById('run').addEventListener('click',function(){
 
+   const included = fruits.includes("apple")
+   console.log(included);
+   if (included == true){
+       console.log('yes there are apples');
+   };
+})
 })();

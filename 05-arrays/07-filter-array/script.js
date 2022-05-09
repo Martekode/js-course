@@ -89,15 +89,10 @@
         },
     ];
 document.getElementById('run').addEventListener('click',function(){
-    let narra = [];
-    people.forEach(person =>{
-        if(person.age>= 18){
-
-            narra.push(person);
-        }
-        
+    const filtered = people.filter(value =>{
+        return value.age >= 18;
     })
-    console.log(narra);
+    console.log(filtered);
 })
     // your code here
 
