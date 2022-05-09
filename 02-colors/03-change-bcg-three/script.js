@@ -14,8 +14,9 @@
         
             var letters = '0123456789ABCDEF'.split('');
             var color = '#';
-            for (var i = 0; i < 6; i++ ) {
-                color += letters[Math.round(Math.random() * 15)];
+            const hexLength = 6;
+            for (var i = 0; i < hexLength; i++ ) {
+                color += letters[Math.floor(Math.random() * letters.length)];
             }
             
             document.body.style.backgroundColor = color;
