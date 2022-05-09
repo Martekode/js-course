@@ -11,11 +11,36 @@
 
 (function() {
     // to get the value of an input: document.getElementById("element-id").value
-    var vone = document.getElementById("op-one").value
-    var vtwo = document.getElementById("op-two").value
     var performOperation = function(operation) {
         // perform the operation
-    
+        var x = document.getElementById("op-one").valueAsNumber;
+        var y = document.getElementById("op-two").valueAsNumber;
+        
+        switch(operation){
+            case "addition":
+                
+                answer =x +y;
+                console.log(answer);
+                break;
+
+            case "substraction":
+               
+                answer =x -y;
+                console.log(answer);
+                break;
+
+            case "multiplication":
+                
+                answer =x *y;
+                console.log(answer);
+                break;
+
+            case "division":
+              
+                answer =x /y;
+                console.log(answer);
+                break;
+        }
     };
 
     Array.from(document.querySelectorAll("button.operator")).forEach(function($btn) {
