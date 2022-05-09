@@ -10,7 +10,7 @@
 // You will have time to focus on it later.
 
 (function() {
-
+   
     var fruits = [
         "apple",
         "pear",
@@ -27,5 +27,8 @@
     ];
 
     // your code here
+    document.getElementById("run").addEventListener("click", function() {
+        console.log(fruits[4]);
 
+    });
 })();
