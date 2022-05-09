@@ -6,11 +6,20 @@
  * started at 26/10/2018
  */
 
+
+
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
 (function() {
+let a = document.getElementById('source').dataset;
+var b = document.createElement('img');
+b.setAttribute('src', a.image);
+document.getElementById('target').appendChild(b);
 
-    // your code here
+
+
+// your code here
+
 
 })();
