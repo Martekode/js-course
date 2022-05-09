@@ -88,7 +88,12 @@
             age: 81,
         },
     ];
-
+document.getElementById('run').addEventListener('click',function(){
+    const totalAge = people.reduce((total, age)=>{
+        return total + age.age;
+    },0)
+    console.log(totalAge);
+});
     // your code here
 
 })();
