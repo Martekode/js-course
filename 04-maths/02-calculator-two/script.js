@@ -11,9 +11,11 @@
 
 (function() {
     // to get the value of an input: document.getElementById("element-id").value
-
+    var vone = document.getElementById("op-one").value
+    var vtwo = document.getElementById("op-two").value
     var performOperation = function(operation) {
         // perform the operation
+    
     };
 
     Array.from(document.querySelectorAll("button.operator")).forEach(function($btn) {
