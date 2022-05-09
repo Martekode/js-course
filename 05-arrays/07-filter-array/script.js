@@ -89,7 +89,7 @@
         },
     ];
 document.getElementById('run').addEventListener('click',function(){
-    var narra = [];
+    let narra = [];
     people.forEach(person =>{
         if(person.age>= 18){
 
