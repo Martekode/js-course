@@ -16,7 +16,7 @@ let a = document.getElementById('source').dataset;
 var b = document.createElement('img');
 b.setAttribute('src', a.image);
 document.getElementById('target').appendChild(b);
-
+document.getElementById('source').remove();
 
 
 // your code here
