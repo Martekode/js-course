@@ -88,7 +88,17 @@
             age: 81,
         },
     ];
+document.getElementById('run').addEventListener('click',function(){
+    var narra = [];
+    people.forEach(person =>{
+        if(person.age>= 18){
 
+            narra.push(person);
+        }
+        
+    })
+    console.log(narra);
+})
     // your code here
 
 })();
