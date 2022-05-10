@@ -17,10 +17,10 @@ myInputfield.maxLength = 10;
  myInputfield.addEventListener('input',()=>{
     text = document.getElementById('pass-one').value;
     console.log(text.length);
-    
-     if (text.length> myInputfield.maxLength){
+    document.getElementById('counter').innerHTML= text.length + '/10';
+     /*if (text.length> myInputfield.maxLength){
          text.length - 1;
-     }
+     }*/
  })
     // your code here
 
