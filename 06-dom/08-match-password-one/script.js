@@ -10,7 +10,23 @@
 // You will have time to focus on it later.
 
 (function() {
+ document.getElementById('run').addEventListener('click', function(){
+     let a = document.getElementById('pass-one').value;
+     let b = document.getElementById('pass-two').value;
+     var bordera = document.getElementById('pass-one');
+     var borderb = document.getElementById('pass-two');    
+     //console.log(a);
+     //console.log(b);
 
+     if(a==b){
+        bordera.style.borderColor = 'green';
+        borderb.style.borderColor = 'green';
+     }
+     else{
+         bordera.style.borderColor = 'red';
+         borderb.style.borderColor = 'red';
+     }
+ })
     // your code here
 
 })();
