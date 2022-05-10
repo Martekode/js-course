@@ -12,11 +12,11 @@
 (function() {
  const myInputfield = document.getElementById('pass-one');
  var text = document.getElementById('pass-one').value;
-console.log(text);
+//console.log(text);
 myInputfield.maxLength = 10;
  myInputfield.addEventListener('input',()=>{
     text = document.getElementById('pass-one').value;
-    console.log(text.length);
+    //console.log(text.length);
     document.getElementById('counter').innerHTML= text.length + '/10';
      /*if (text.length> myInputfield.maxLength){
          text.length - 1;
