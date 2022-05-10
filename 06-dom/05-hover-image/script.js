@@ -21,7 +21,7 @@
         //console.log('lukt');
         //console.log(a);
         image.setAttribute('src', a);
-        console.log(image);
+        //console.log(image);
     }
     image.onmouseout = function (){
         //console.log(b);
