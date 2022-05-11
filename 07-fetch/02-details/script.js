@@ -11,12 +11,23 @@
 
 (() => {
     document.getElementById('run').addEventListener('click', () => {
-         let a = document.getElementById('hero-id').value;7
+         let a = document.getElementById('hero-id').value;
          let b = document.getElementById('target');
-         let c = document.getElementById('tpl-hero').content;
-         var d = document.importNode(c,true);
-         fetch('http://localhost:3000/heroes/'+a).then(res => res.json()).then(data => b.appendChild(c)).catch();
-         console.log(c);
+         let c = document.getElementById('tpl-hero');
+         let clone = c.content.cloneNode(true);
+        fetch('http://localhost:3000/heroes/'+a).then(res => res.json()).then(data => {
+            let name = clone.querySelector('.name');
+            let ego = clone.querySelector('.alter-ego');
+            let power = clone.querySelector('.powers');
+            name.innerText = data.name;
+            ego.innerText = data.alterEgo;
+            power.innerText = data.abilities;
+            
+            b.appendChild(clone);
+        });
+        
+         
+         
         
     })
     // your code here
