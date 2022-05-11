@@ -24,7 +24,7 @@
             power.innerText = data.abilities;
             
             b.appendChild(clone);
-        });
+        }).catch(err => alert('that id does not exist'));
         
          
          
