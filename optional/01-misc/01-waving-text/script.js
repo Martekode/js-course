@@ -10,7 +10,20 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    // your code here
+ const a = document.getElementById('target').innerHTML;
+    //console.log(a)
+    function mkarray(string){
+        return string.split('');
+    }
+    let b = mkarray(a);
+    //console.log(b);
+    function mkwave(wave){
+        for(i=0,z=10;i<wave.length;i++,z++){
+            //console.log(wave[i]);
+          return wave[i].style.fontSize = `${z}px`;
+        }
+    }
+    
+    mkwave(b);
 
 })();
