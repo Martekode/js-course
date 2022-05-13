@@ -40,12 +40,24 @@
     const spltTxt = strTxt.split("");
     text.textContent = "";
     console.log(spltTxt);
-
-    for (i=0,z=10;i<spltTxt.length;i++,z++){
-        text.innerHTML += "<span>"+ spltTxt[i]+"</span>";
-        let span = text.querySelectorAll('span')[i];
-        span.style.fontSize = `${i+z}px`
+    let spans = [];
+    for (i=0;i<spltTxt.length;i++){
+        let span = document.createElement('span')
+        span.innerText = spltTxt[i];
+        spans.push(span);
+        text.appendChild(span);
     }
-
+    let start =0;
+    const fontSizes = ["20px","24px","28px","30px","28px","24px"]
+    function mkwave(start){
+        for(i=0;i<spans.length;i++){
+            spans[i].style.fontSize = fontSizes[(i+start)%fontSizes.length];
+            console.log(spans[i])
+        }
+    }
+    setInterval(() => {
+        mkwave(start)
+        start++;
+    }, 100);
     
 })();
