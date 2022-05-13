@@ -12,11 +12,11 @@
 (function() {
     var place = document.getElementById('target');
     var tbl = document.createElement("table");
-    var tblBody = document.createElement("tbody");
+    //var tblBody = document.createElement("tbody");
     
     for (let i = 0; i <= 10; i++){
       var rows = tbl.insertRow();
-      var cell = rows.insertCell();
+      rows.insertCell();
       console.log(rows);
     }
     console.log(rows);

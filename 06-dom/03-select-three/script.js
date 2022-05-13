@@ -13,7 +13,7 @@
  let lel = document.getElementsByClassName("target");
 
  for(i=0;i<lel.length;i++){
-     document.getElementsByClassName("target")[i].innerHTML = "owned";
+     document.getElementsByClassName("target")[i].innerText= "owned";
  }
     // your code here
 
